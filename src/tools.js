@@ -21,6 +21,4 @@ export function multiply (a, b) {
   return a * b;
 }
 
-multiply('x', 'y');
-
 export const magic_number = 42;
