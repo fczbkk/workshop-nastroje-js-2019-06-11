@@ -10,7 +10,8 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:strict": "npm run lint -- --max-warnings 0",
     "doc": "jsdoc -c ./jsdoc.config.json",
-    "doc:readme": "documentation readme ./src/tools.js -s 'Documentation'"
+    "doc:readme": "documentation readme ./src/tools.js -s 'Documentation'",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "@babel/cli": "^7.4.4"
@@ -31,6 +32,8 @@
     "mocha": "^6.1.4",
     "rimraf": "^2.6.3",
     "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.4",
+    "conventional-changelog-angular": "^5.0.2",
+    "conventional-changelog-cli": "^2.0.11"
   }
 }
