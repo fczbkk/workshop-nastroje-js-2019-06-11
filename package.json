@@ -11,7 +11,10 @@
     "lint:strict": "npm run lint -- --max-warnings 0",
     "doc": "jsdoc -c ./jsdoc.config.json",
     "doc:readme": "documentation readme ./src/tools.js -s 'Documentation'",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "preversion": "npm run lint && npm run test",
+    "version": "npm run build && npm run changelog && npm run doc && git add -A",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@babel/cli": "^7.4.4"
