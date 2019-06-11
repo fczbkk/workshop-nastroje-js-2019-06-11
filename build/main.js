@@ -119,10 +119,27 @@ console.log(calculateSomething(10, 20));
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "multiply", function() { return multiply; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "magic_number", function() { return magic_number; });
+/**
+ * Adds two numbers.
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
 /* harmony default export */ __webpack_exports__["default"] = (function (a, b) {
   return a + b;
 });
+/**
+ * Multiplies two numbers
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+
 function multiply(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('multiplier must be number');
+  }
+
   return a * b;
 }
 const magic_number = 42;

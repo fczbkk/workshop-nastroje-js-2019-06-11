@@ -1,6 +1,6 @@
 {
   "name": "@fczbkk/workshop-nastroje-js-2019-06-11",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "cleanup": "rimraf ./build",
     "prebuild": "npm run cleanup",
