@@ -4,16 +4,16 @@
   "scripts": {
     "cleanup": "rimraf ./build",
     "prebuild": "npm run cleanup",
-    "build": "babel ./src --out-dir ./build",
-    "hello": "node ./tasks/hello-world.js",
-    "afterparty": "node ./tasks/afterparty.js",
-    "everything": "npm run hello || npm run afterparty"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5"
+    "@babel/cli": "^7.4.4"
   },
   "devDependencies": {
-    "rimraf": "^2.6.3"
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4"
   }
 }
