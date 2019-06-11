@@ -1,23 +1,19 @@
 {
   "name": "@fczbkk/workshop-nastroje-js-2019-06-11",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanup": "rimraf ./build",
+    "prebuild": "npm run cleanup",
+    "build": "babel ./src --out-dir ./build",
+    "hello": "node ./tasks/hello-world.js",
+    "afterparty": "node ./tasks/afterparty.js",
+    "everything": "npm run hello || npm run afterparty"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fczbkk/workshop-nastroje-js-2019-06-11.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fczbkk/workshop-nastroje-js-2019-06-11/issues"
-  },
-  "homepage": "https://github.com/fczbkk/workshop-nastroje-js-2019-06-11#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
   }
 }
