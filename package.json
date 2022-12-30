@@ -32,7 +32,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-nyan-reporter": "^0.2.5",
     "karma-webpack": "^4.0.2",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "rimraf": "^2.6.3",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.4",
